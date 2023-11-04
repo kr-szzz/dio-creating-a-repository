@@ -1,0 +1,20 @@
+Clonar um repositório com Token
+
+Crie um Token.
+No Git, coloque o comando “git clone + HTTPS”, ai só colocar o usuário e o Token como senha.
+
+Chave SSH
+Criar:
+Verificar se possui uma chave: ls -al ~/.ssh.
+
+Para gerar uma nova chave:
+1º: ssh-keygen -t ed25519 -C "email".
+2º: cat ~/.ssh/id_ed25519.pub (exibe a chave).
+º: Copie toda a saída do comando “cat”.
+4º: Crie uma chave SSH no GitHub.
+
+Backup:
+ls -al ~/.ssh (identificar suas chaves).
+Copie manualmente ou use o comando “rsync” ou ”cp”.
+rsync: rsync -av ~/.ssh /caminho/para/o/seu/diretório/de/backup.
+cp: cp -r ~/.ssh /caminho/para/o/seu/diretório/de/backup.
